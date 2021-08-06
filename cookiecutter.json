@@ -1,0 +1,25 @@
+{
+    "project": "Awesome Project",
+    "repository": "{{ cookiecutter.project.lower().replace(' ', '-') }}",
+    "package": "{{ cookiecutter.repository.replace('-', '_') }}",
+    "description": "An awesome Python package.",
+    "author": "Jeremy Retailleau",
+    "github_group": "buddly27",
+    "architecture": [
+        "noarch",
+        "linux",
+        "osx",
+        "windows10"
+    ],
+    "command_line_interface": [
+        "no",
+        "yes"
+    ],
+    "python_version": [
+        ">=3.6",
+        ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5*"
+    ],
+    "version": "0.1.0",
+    "date": "{% now 'local' %}",
+    "year": "{{ cookiecutter.date[:4] }}"
+}
